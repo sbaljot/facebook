@@ -1,7 +1,11 @@
 body{
     background-color: rgb(229, 229, 231);
+    font-family: 'Tahoma', Segoe UI, Geneva, Verdana, sans-serif;
 }
 #fbsearch{
+    background-color: rgb(229, 229, 231);
+}
+#upload{
     background-color: rgb(229, 229, 231);
 }
 .navicons{
@@ -34,13 +38,15 @@ svg{
 .mb-1{
     padding: 2vh 30vh 1vh 2vh;
     border-radius: 2%;
+    font-weight: 600;
 }
 .mb-1:hover{
     background-color: rgb(206, 206, 209);
     cursor: pointer;
 }
 .card{
-    margin-left: 9vh;
+    margin-left: 10vh;
+    width: 90vh;
 }
 .statusbtn{
     padding-left: 5vh;
@@ -48,4 +54,315 @@ svg{
 }
 .statusbtn:hover{
     background-color: rgb(206, 206, 209);
+}
+.mb-2{
+    padding: 1vh 30vh 1vh 2vh;
+    border-radius: 2%;
+    font-weight: 550;
+}
+.mb-2:hover{
+    background-color: rgb(206, 206, 209);
+    cursor: pointer;
+}
+.chaticons{
+    margin-left: 3vh;
+}
+.card-subtitle{
+    font-size: 12px;
+    margin-top: -2vh;
+    margin-bottom: 2vh;
+    margin-left: 6vh;
+}
+#likebtn,#commentbtn,#sharebtn{
+    margin-left: 5vh;
+}
+#chat{
+    display: inline-flex;
+    margin-left: 60vh;
+}
+#sidebar{
+    display: inline-flex;
+}
+#post{
+    width: 45vh;
+}
+#viewcomments{
+    color: grey; 
+    cursor: pointer; 
+    margin-left: 63vh;
+}
+#morepost{
+    margin-left: 70vh;
+}
+nav{
+    background-color: white;
+}
+@media(max-width: 1296px){
+    #chat{
+        display: none;
+    }
+    #sidebar{
+        display: none;
+    }
+    .card{
+        margin-left: 20vh;       
+    }
+    .r,#user{
+        display: none;
+    }
+    .c{
+        margin-left: 11vh;
+    }
+    #post{
+        margin-left: 20vh;
+        margin-top: 0vh;
+    }
+}
+@media(max-width: 992px){
+    #fbsearch{
+        display: none;
+    }
+    #post{
+        margin-left: -11vh;
+        margin-top: 0vh;
+    }
+    nav{
+        background-color: rgb(229, 229, 231);
+    }
+}
+@media(max-width: 725px){
+    #post{
+        margin-left: -17vh;
+    }
+}
+@media(max-width: 665px){
+    .statusbt{
+        display: none;
+    }
+    #upload{
+        width: 35vh;
+        margin-top: -4vh;
+    }
+    #viewcomments{
+        display: none;
+    }
+    #morepost{
+        display: none;
+    }
+    .card{
+        width: 66vh;
+    }
+    #postdp{
+        display: none;
+    }
+}
+@media(max-width: 510px){
+    hr{
+        display: none;
+    }
+    .statusbtn{
+        padding-top: 2vh;
+        padding-bottom: 0vh;
+        padding-left: 4vh;
+    }
+    #likebtn, #commentbtn, #sharebtn{
+        margin-left: 0vh;
+    }
+    .card{
+        width: 50vh;
+    }
+}
+@media(max-width: 390px){
+    .card{
+        width: 40vh;
+    }
+    #upload{
+        width: 28vh;
+    }
+    #upload::placeholder{
+        font-size: 0px;
+    }
+    .statusbtn{
+        padding: 0px;
+        padding-top: 2vh;
+    }
+    .statusbtn{
+        margin-left: 5vh;
+    }
+    #likebtn,#commentbtn,#sharebtn{
+        margin-left: 5vh;
+        padding: 0px;
+        padding-top: 2vh;
+    }
+}
+@media(max-width: 320px){
+    .card{
+        margin-left: 17vh;
+    }
+    #upload{
+        width: 28vh;
+    }
+}
+@media(max-height: 540px){
+    .card{
+        width: 110vh;
+    }
+    #morepost{
+        margin-left: 83vh;
+    }
+    #viewcomments{
+        margin-left: 75vh;
+    }
+    #chat{
+        margin-left: 100vh;
+    }
+}
+@media(max-height: 500px){
+    .statusbtn{
+        padding: 0vh;
+        padding-left: 8vh;
+    }
+    #viewcomments{
+        margin-left: 65vh;
+    }
+    #morepost{
+        margin-left: 73vh;
+    }
+    .card-subtitle{
+        margin-left: 8vh;
+    }
+    .card{
+        margin-top: 2vh;
+    }
+}
+@media(max-height: 450px){
+    .statusbtn{
+        margin-left: -8vh;
+    }
+    #likebtn,#commentbtn,#sharebtn{
+        margin-left: -5vh;
+    }
+    .card{
+        width: 100vh;
+        margin-left: 30vh;
+    }
+    #viewcomments,#morepost{
+        display: none;
+    }
+    .card-subtitle{
+        margin-left: 9.5vh;
+        margin-top: -3vh;
+    }
+}
+@media(max-height: 405px){
+    .card{
+        margin-left: 45vh;
+        width: 130vh;
+    }
+    #chat{
+        margin-left: 150vh;
+    }
+    #user{
+        margin-left: 70vh;
+    }
+}
+@media(max-height: 311px){
+    .card{
+        width: 170vh;
+    }
+    #chat{
+        margin-left: 200vh;
+    }
+    #user{
+        margin-left: 95vh;
+    }
+    .card-subtitle{
+        margin-left: 13.5vh;
+    }
+}
+@media(height: 1024px),(width: 768px){
+    .card-subtitle{
+        margin-left: 4vh;
+        margin-top: -3vh;
+    }
+    .card{
+        margin-left: 12vh;
+        width: 50vh;
+    }
+    #upload{
+        width:70vh;
+    }
+    .statusbt{
+        display: none;
+    }
+    #upload{
+        width: 40vh;
+    }
+    #viewcomments{
+        display: none;
+    }
+    #likebtn,#commentbtn,#sharebtn{
+        padding-left: 1vh;
+    }
+}
+@media(height: 1366px),(width: 1024px){
+    .card{
+        margin-left: -19vh;
+        width: 69vh;
+    }
+    #upload{
+        width: 75%;
+    }
+    #fbsearch{
+        width: 15vh;
+    }
+    #navbarNav{
+        margin-left: 17vh;
+    }
+    .c{
+        margin-left: 5vh;
+    }
+    .card-subtitle{
+        margin-top: -0.5vh;
+        margin-left: 3vh;
+    }
+    #viewcomments{
+        margin-left: 55vh;
+    }
+    #morepost{
+        margin-left: 58vh;
+    }
+}
+@media(height: 360px),(width: 640px){
+    .card{
+        margin-left: 20vh;
+    }
+    #upload{
+        width: 100vh;
+    }
+}
+@media(height: 823px),(width: 411px){
+    .card{
+        margin-left: 18vh;
+        width: 47vh;
+    }
+}
+@media(height: 736px),(width: 414px){
+    .card{
+        margin-left: 20vh;
+    }
+}
+@media(height: 1024px),(width: 600px){
+    .card{
+        margin-left: 19vh;
+    }
+}
+@media(height: 1280px),(width: 800px){
+    .card{
+        margin-left: 12vh;
+        width: 64vh;
+    }
+    #viewcomments{
+        margin-left: -10vh;
+    }
 }
