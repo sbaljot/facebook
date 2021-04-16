@@ -307,7 +307,7 @@ nav{
 }
 @media(height: 1366px),(width: 1024px){
     .card{
-        margin-left: -19vh;
+        margin-left: -20vh;
         width: 69vh;
     }
     #upload{
@@ -336,6 +336,7 @@ nav{
 @media(height: 360px),(width: 640px){
     .card{
         margin-left: 20vh;
+        width: 119vh;
     }
     #upload{
         width: 100vh;
@@ -354,15 +355,64 @@ nav{
 }
 @media(height: 1024px),(width: 600px){
     .card{
-        margin-left: 19vh;
+        margin-left: 15vh;
     }
 }
 @media(height: 1280px),(width: 800px){
     .card{
         margin-left: 12vh;
-        width: 64vh;
+        width: 56vh;
+    }
+    #upload{
+        width: 50vh;
+    }
+    .statusbtn{
+        padding-left: 2vh;
+    }
+    #likebtn,#commentbtn,#sharebtn{
+        padding-left: 0px;
     }
     #viewcomments{
-        margin-left: -10vh;
+        margin-left: 40vh;
+    }
+    #morepost{
+        margin-left: 50vh;
+    }
+    .card-subtitle{
+        margin-left: 3.5vh;
+        margin-top: -2vh;
+    }
+}
+@media(height: 960px),(width: 600px){
+    .card{
+        width: 50vh;
+    }
+    .card-subtitle{
+        margin-left: 4.5vh;
+        margin-top: -1.5vh;
+    }
+    #likebtn,#commentbtn,#sharebtn{
+        padding-left: 1vh;
+    }
+}
+@media(height: 533px),(width: 320px){
+    .card{
+        width: 65vh;
+    }
+    #upload{
+        width:55vh;
+    }
+}
+@media(height: 731px),(width: 411px){
+    .card{
+        width: 49vh;
+    }
+}
+@media(height: 568px),(width: 320px){
+    .card{
+        width: 51vh;
+    }
+    #upload{
+        width: 40vh;
     }
 }
