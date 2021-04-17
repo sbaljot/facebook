@@ -47,6 +47,7 @@ svg{
 .card{
     margin-left: 10vh;
     width: 90vh;
+    overflow: hidden;
 }
 .statusbtn{
     padding-left: 5vh;
@@ -97,18 +98,56 @@ svg{
 nav{
     background-color: white;
 }
+.navbar2{
+    background-color: rgb(50, 50, 177);
+    display: none;
+    width: 100%;
+    overflow-x: hidden;
+}
+#fbicon{
+    margin: 2vh;
+}
+.navbar2 a{
+    color: white;
+    margin-right: 1vh;
+    margin-left: 2vh;
+    position: relative;
+    left: 9vh;
+    text-decoration: none;
+}
+#chaticons{
+    margin-left: 16vh;
+}
+#fbsearch2{
+    width: 60%;
+}
+#userimg{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: solid black 1px;
+    display: none;
+    margin-left: 2vh;
+    margin-top: 1vh;
+}
+#upload2{
+    width: 75%;
+    display: none;
+    margin-left: 1vh;
+}
+#uploadbtn{
+    display: none;
+}
 @media(max-width: 1296px){
-    #chat{
-        display: none;
-    }
-    #sidebar{
-        display: none;
-    }
     .card{
-        margin-left: 20vh;       
+        margin-left: -30vh;
+        width: 90vh;       
     }
-    .r,#user{
-        display: none;
+    #chat{
+        margin-left: 15vh;
+    }
+    .mb-1{
+        padding-right: 15vh;
     }
     .c{
         margin-left: 11vh;
@@ -117,22 +156,71 @@ nav{
         margin-left: 20vh;
         margin-top: 0vh;
     }
+    #user {
+        margin-left: 9vh;
+    }
 }
-@media(max-width: 992px){
-    #fbsearch{
+@media(max-width: 1238px){
+    .card{
+        width: 90vh;
+        margin-left: -34vh;
+    }
+    #chat {
+        margin-left: 11vh;
+    }
+    .chaticons{
+        margin-left: 2vh;
+    }
+    .mb-2{
+        padding: 0vh;
+    }
+    
+    #user,#fbsearch{
         display: none;
     }
-    #post{
-        margin-left: -11vh;
-        margin-top: 0vh;
+    .r1{
+        margin-left: 18vh;
     }
-    nav{
-        background-color: rgb(229, 229, 231);
+    .c1{
+        margin-left: -20vh;
     }
 }
-@media(max-width: 725px){
-    #post{
-        margin-left: -17vh;
+@media(max-width: 1124px){
+    #sidebar{
+        display: none;
+    }
+    .card{
+        margin-left: -14vh;
+    }
+    #chat {
+        margin-left: 35vh;
+    }
+}
+@media(max-width: 992px){
+    #chat {
+        margin-left: 32vh;
+        display: none;
+    }
+    .c1 {
+        margin-left: -31vh;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar2{
+        display: block;
+    }
+    #statuspostcard{
+        display: none;
+    }
+    #userimg{
+        display: inline;
+    }
+    #upload2{
+        display: inline;
+    }
+    #uploadbtn{
+        display: inline;
     }
 }
 @media(max-width: 665px){
@@ -154,6 +242,11 @@ nav{
     }
     #postdp{
         display: none;
+    }
+}
+@media(max-width: 550px){
+    #upload2{
+        width: 50%;
     }
 }
 @media(max-width: 510px){
@@ -195,9 +288,20 @@ nav{
         padding-top: 2vh;
     }
 }
+@media(max-width: 382px){
+    #fbsearch2{
+        width: 25vh;
+    }
+}
+@media(max-width: 334px){
+    #fbsearch2{
+        width: 20vh;
+    }
+}
 @media(max-width: 320px){
-    .card{
-        margin-left: 17vh;
+    .card {
+        margin-left: -19vh;
+        width: 39vh;
     }
     #upload{
         width: 28vh;
@@ -344,7 +448,7 @@ nav{
 }
 @media(height: 823px),(width: 411px){
     .card{
-        margin-left: 18vh;
+        margin-left: 15vh;
         width: 47vh;
     }
 }
@@ -355,28 +459,29 @@ nav{
 }
 @media(height: 1024px),(width: 600px){
     .card{
-        margin-left: 15vh;
+        margin-left: 17vh;
     }
 }
 @media(height: 1280px),(width: 800px){
     .card{
         margin-left: 12vh;
-        width: 56vh;
+        width: 51vh;
     }
     #upload{
-        width: 50vh;
+        width: 45vh;
     }
     .statusbtn{
-        padding-left: 2vh;
+        padding-left: 1vh;
     }
     #likebtn,#commentbtn,#sharebtn{
         padding-left: 0px;
+        margin-left: 0px;
     }
     #viewcomments{
-        margin-left: 40vh;
+        margin-left: 35vh;
     }
     #morepost{
-        margin-left: 50vh;
+        margin-left: 45vh;
     }
     .card-subtitle{
         margin-left: 3.5vh;
@@ -414,5 +519,11 @@ nav{
     }
     #upload{
         width: 40vh;
+    }
+}
+@media(height: 480px),(width: 320px){
+    .statusbtn{
+        padding-left: 0px;
+        padding-top: 1vh;
     }
 }
