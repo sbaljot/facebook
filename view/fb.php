@@ -9,8 +9,12 @@
         href="https://i.pinimg.com/originals/af/9c/cb/af9ccb82cd058e86d5a487223980e31c.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link href="fb.css" rel="stylesheet">
+        <style>
+            <?php include 'fb.css'; ?>
+        </style>
     <title>Facebook</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,22 +25,22 @@
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
         </svg>
         <input type="search" id="fbsearch2" placeholder="Search Facebook">&nbsp;
-        <button type="submit" style="background-color: rgb(77, 50, 177);; color: white;">Search</button><br>
-        <a href="#href">Home</a>
+        <button type="submit" style="background-color: #2f5db8; color: white;">Search</button>
+        <br><a href="#href">Home</a>
         <a href="#href">Profile</a>
-        <a href="#href">Messages</a> 
+        <a href="#href">Messages</a>
         <a href="#href">Notifications</a>
-        <a href="#href">Messages</a> 
-        <a href="#href">Chats</a> 
+        <a href="#href">Messages</a>
+        <a href="#href">Chats</a>
         <a href="#href">Friends</a>
         <a href="#href">Pages</a>
         <a href="#href">Groups</a>
-        <a href="#href">Menu</a>    
+        <a href="#href">Menu</a>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
-                    fill="rgb(3, 82, 252)" class="bi bi-facebook" viewBox="0 0 16 16">
+                    fill="#2f98f5" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path
                         d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                 </svg></a>
@@ -51,7 +55,7 @@
                     <li class="nav-item c c1">
                         <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home"
                             aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                fill="#1586eb" class="bi bi-house-door-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
                             </svg></a>
@@ -316,8 +320,8 @@
         </ul>
     </div>
     <img id="userimg" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
-        <input id="upload2" placeholder="What's on your mind?">
-        <button type="submit" id="uploadbtn">Post</button><br>
+    <input id="upload2" placeholder="What's on your mind?">
+    <button type="submit" id="uploadbtn">Post</button>
     <div class="row row-cols-1 row-cols-md-1 g-2 d-inline-flex" id="post">
         <div class="col">
             <div class="card" id="statuspostcard">
@@ -357,59 +361,15 @@
 
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"><svg style="position: relative; top:1vh;" xmlns="http://www.w3.org/2000/svg"
-                            width="30" height="30" fill="grey" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg>&nbsp;&nbsp;User<svg id="morepost" xmlns="http://www.w3.org/2000/svg" width="20"
-                            height="20" fill="grey" class="bi bi-three-dots" viewBox="0 0 16 16">
-                            <path
-                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                        </svg></h5>
-                    <h6 class="card-subtitle text-muted">Date-time</h6>
-                    <p class="card-text" style="font-size: 4vh;">Status user posts</p>
-                    <div><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="rgb(3, 82, 252)"
-                            class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="rgb(250, 85, 93)"
-                            class="bi bi-heart-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                        </svg>
-                        <span id="viewcomments">View comments</span>
-                    </div>
-                    <hr>
-                    <button type="button" class="btn statusbtn" id="likebtn"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="20" fill="grey" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
-                            <path
-                                d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
-                        </svg>&nbsp;&nbsp;<span class="statusbt">Like</span></button>
-                    <button type="button" class="btn statusbtn" id="commentbtn"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="20" fill="grey" class="bi bi-chat-left" viewBox="0 0 16 16">
-                            <path
-                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                        </svg>&nbsp;&nbsp;<span class="statusbt">Comment</span></button>
-                    <button type="button" class="btn statusbtn" id="sharebtn"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="20" fill="grey" class="bi bi-arrow-90deg-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z" />
-                        </svg>&nbsp;&nbsp;<span class="statusbt">Share</span></button>
-                    <hr>
-                </div>
-            </div>
+        <div id="posts">
         </div>
     </div>
     <div class="p-3 flex-column" id="chat">
         <hr id="chathr">
         <div>
             <span style="font-size: larger; padding-left: 1vh; color: grey; font-weight: 600;">Contacts</span><svg
-                class="chaticons" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="grey" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                class="chaticons" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
+                class="bi bi-camera-video-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
             </svg><svg class="chaticons" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
@@ -434,7 +394,7 @@
             <li class="mb-2">User9</li>
         </ul>
     </div>
-
+    <script src="fb.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
