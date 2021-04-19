@@ -48,6 +48,7 @@ svg{
     margin-left: 10vh;
     width: 90vh;
     overflow: hidden;
+    margin-top: 1vh;
 }
 .statusbtn{
     padding-left: 5vh;
@@ -93,13 +94,13 @@ svg{
     margin-left: 63vh;
 }
 #morepost{
-    margin-left: 70vh;
+    margin-left: 68vh;
 }
 nav{
     background-color: white;
 }
 .navbar2{
-    background-color: rgb(50, 50, 177);
+    background-color: #4267B2;
     display: none;
     width: 100%;
     overflow-x: hidden;
@@ -111,8 +112,6 @@ nav{
     color: white;
     margin-right: 1vh;
     margin-left: 2vh;
-    position: relative;
-    left: 9vh;
     text-decoration: none;
 }
 #chaticons{
@@ -190,10 +189,13 @@ nav{
         display: none;
     }
     .card{
-        margin-left: -14vh;
+        margin-left: -7vh;
     }
     #chat {
-        margin-left: 35vh;
+        margin-left: 40vh;
+    }
+    #post{
+        margin-left: 10vh;
     }
 }
 @media(max-width: 992px){
@@ -220,6 +222,9 @@ nav{
         display: inline;
     }
     #uploadbtn{
+        display: inline;
+    }
+    #act{
         display: inline;
     }
 }
@@ -300,7 +305,7 @@ nav{
 }
 @media(max-width: 320px){
     .card {
-        margin-left: -19vh;
+        margin-left: -8vh;
         width: 39vh;
     }
     #upload{
@@ -411,7 +416,7 @@ nav{
 }
 @media(height: 1366px),(width: 1024px){
     .card{
-        margin-left: -20vh;
+        margin-left: -9vh;
         width: 69vh;
     }
     #upload{
@@ -436,6 +441,12 @@ nav{
     #morepost{
         margin-left: 58vh;
     }
+    #chat{
+        display: none;
+    }
+    .r{
+        display: none;
+    }
 }
 @media(height: 360px),(width: 640px){
     .card{
@@ -446,25 +457,28 @@ nav{
         width: 100vh;
     }
 }
-@media(height: 823px),(width: 411px){
+@media(height: 823px),(max-width: 412px){
     .card{
-        margin-left: 15vh;
+        margin-left: -2vh;
         width: 47vh;
+    }
+    #post {
+        margin-left: 1vh;
     }
 }
 @media(height: 736px),(width: 414px){
     .card{
-        margin-left: 20vh;
+        margin-left: -7vh;
     }
 }
 @media(height: 1024px),(width: 600px){
     .card{
-        margin-left: 17vh;
+        margin-left: -8vh;
     }
 }
 @media(height: 1280px),(width: 800px){
     .card{
-        margin-left: 12vh;
+        margin-left: -7vh;
         width: 51vh;
     }
     #upload{
