@@ -20,6 +20,8 @@ $(document).ready(function () {
                             </svg></h5>
                         <h6 class="card-subtitle text-muted">`+status['date']+`</h6>
                         <p class="card-text" style="font-size: 4vh;">`+status['post']+`</p>
+                        <img id="postimg"
+                            src="`+status['url']+`">
                         <div><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="rgb(3, 82, 252)"
                                 class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
                                 <path
