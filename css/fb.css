@@ -83,13 +83,16 @@ svg{
 }
 #chat{
     display: inline-flex;
-    margin-left: 500px;
+    margin-left: 460px;
 }
 #sidebar{
     display: inline-flex;
 }
 #post{
     width: 300px;
+}
+#statuspost{
+    font-size: 30px;
 }
 #viewcomments{
     color: grey; 
@@ -142,6 +145,33 @@ nav{
 #uploadbtn{
     display: none;
 }
+@media(max-width: 1387px){
+    #chat{
+        margin-left: 400px;
+    }
+    .mb-2{
+        padding: 12px 37px 7px 20px;
+    }
+    .card{
+        margin-left: 39px;
+    }
+    #user {
+        margin-left: 77px;
+    }
+}
+@media(max-width: 1325px){
+    #user {
+        margin-left: 110px;
+    }
+    .c {
+        margin-left: 78px;
+    }
+}
+@media(max-width: 1305px){
+    #user {
+        margin-left: 90px;
+    }
+}
 @media(max-width: 1296px){
     .card{
         margin-left: -30vh;
@@ -175,6 +205,11 @@ nav{
     }
     .mb-1 {
         padding-right: 111px;
+    }
+}
+@media(max-width: 1254px){
+    #user {
+        margin-left: 36px;
     }
 }
 @media(max-width: 1239px){
