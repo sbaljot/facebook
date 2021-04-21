@@ -19,7 +19,7 @@ $(document).ready(function () {
                                     d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                             </svg></h5>
                         <h6 class="card-subtitle text-muted">`+status['date']+`</h6>
-                        <p class="card-text" style="font-size: 4vh;">`+status['post']+`</p>
+                        <p class="card-text" id="statuspost">`+status['post']+`</p>
                         <img id="postimg"
                             src="`+status['url']+`">
                         <div><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="rgb(3, 82, 252)"
