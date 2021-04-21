@@ -20,23 +20,23 @@ body{
     padding: 5%;
 }
 #navbarNav{
-    margin-left: 15vh;
+    margin-left: 100px;
 }
 .c{
-    margin-left: 13vh;
+    margin-left: 90px;
 }
 #user{
-    margin-left: 27vh;
+    margin-left: 120px;
 }
 .r{
-    margin-left: 2vh;
+    margin-left: 20px;
 }
 svg{
     position: relative;
     cursor: pointer;
 }
 .mb-1{
-    padding: 2vh 30vh 1vh 2vh;
+    padding: 20px 150px 10px 20px;
     border-radius: 2%;
     font-weight: 600;
 }
@@ -45,20 +45,20 @@ svg{
     cursor: pointer;
 }
 .card{
-    margin-left: 10vh;
-    width: 90vh;
+    margin-left: 100px;
+    width: 650px;
     overflow: hidden;
-    margin-top: 1vh;
+    margin-top: 5px;
 }
 .statusbtn{
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .statusbtn:hover{
     background-color: rgb(206, 206, 209);
 }
 .mb-2{
-    padding: 1vh 30vh 1vh 2vh;
+    padding: 10px 185px 10px 20px;
     border-radius: 2%;
     font-weight: 550;
 }
@@ -67,34 +67,37 @@ svg{
     cursor: pointer;
 }
 .chaticons{
-    margin-left: 3vh;
+    margin-left: 20px;
+}
+#lc{
+    margin-left: 80px;
 }
 .card-subtitle{
     font-size: 12px;
-    margin-top: -2vh;
-    margin-bottom: 2vh;
-    margin-left: 6vh;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    margin-left: 43px;
 }
 #likebtn,#commentbtn,#sharebtn{
-    margin-left: 5vh;
+    margin-left: 40px;
 }
 #chat{
     display: inline-flex;
-    margin-left: 60vh;
+    margin-left: 500px;
 }
 #sidebar{
     display: inline-flex;
 }
 #post{
-    width: 45vh;
+    width: 300px;
 }
 #viewcomments{
     color: grey; 
     cursor: pointer; 
-    margin-left: 63vh;
+    margin-left: 450px;
 }
 #morepost{
-    margin-left: 68vh;
+    margin-left: 490px;
 }
 nav{
     background-color: white;
@@ -105,17 +108,19 @@ nav{
     width: 100%;
     overflow-x: hidden;
 }
+#postimg{
+    height: 300px;
+    width: 300px;
+    margin-left: 150px;
+}
 #fbicon{
-    margin: 2vh;
+    margin: 5px;
 }
 .navbar2 a{
     color: white;
-    margin-right: 1vh;
-    margin-left: 2vh;
+    margin-right: 5px;
+    margin-left: 8px;
     text-decoration: none;
-}
-#chaticons{
-    margin-left: 16vh;
 }
 #fbsearch2{
     width: 60%;
@@ -126,13 +131,13 @@ nav{
     background-color: white;
     border: solid black 1px;
     display: none;
-    margin-left: 2vh;
-    margin-top: 1vh;
+    margin-left: 8px;
+    margin-top: 5px;
 }
 #upload2{
     width: 75%;
     display: none;
-    margin-left: 1vh;
+    margin-left: 5px;
 }
 #uploadbtn{
     display: none;
@@ -140,48 +145,86 @@ nav{
 @media(max-width: 1296px){
     .card{
         margin-left: -30vh;
-        width: 90vh;       
+        width: 650px;       
     }
     #chat{
-        margin-left: 15vh;
+        margin-left: 150px;
     }
     .mb-1{
-        padding-right: 15vh;
+        padding-right: 150px;
     }
     .c{
-        margin-left: 11vh;
+        margin-left: 80px;
     }
     #post{
-        margin-left: 20vh;
+        margin-left: 180px;
         margin-top: 0vh;
     }
     #user {
-        margin-left: 9vh;
+        margin-left: 60px;
     }
 }
-@media(max-width: 1238px){
-    .card{
-        width: 90vh;
-        margin-left: -34vh;
+@media(max-width: 1285px){
+    #post {
+        width: 291px;
+    }
+}
+@media(max-width: 1276px){
+    #post {
+        width: 282px;
+    }
+    .mb-1 {
+        padding-right: 111px;
+    }
+}
+@media(max-width: 1239px){
+    .card {
+        width: 647px;
     }
     #chat {
-        margin-left: 11vh;
+        margin-left: 150px;
     }
     .chaticons{
-        margin-left: 2vh;
+        margin-left: 10px;
     }
-    .mb-2{
-        padding: 0vh;
+    .mb-2 {
+        padding: 11px;
     }
     
     #user,#fbsearch{
         display: none;
     }
     .r1{
-        margin-left: 18vh;
+        margin-left: 140px;
     }
     .c1{
-        margin-left: -20vh;
+        margin-left: -30px;
+    }
+}
+@media(max-width: 1209px){
+    #chat {
+        margin-left: 129px;
+    }
+    .card {
+        width: 633px;
+    }
+}
+@media(max-width: 1187px){
+    .mb-1 {
+        padding-right: 83px;
+    }
+}
+@media(max-width: 1159px){
+    .mb-2 {
+        padding: 8px;
+    }
+    #chat {
+        margin-left: 124px;
+    }
+}
+@media(max-width: 1154px){
+    #lc {
+        margin-left: 32px;
     }
 }
 @media(max-width: 1124px){
@@ -189,22 +232,19 @@ nav{
         display: none;
     }
     .card{
-        margin-left: -7vh;
+        margin-left: -35px;
+        width: 651px;
     }
     #chat {
-        margin-left: 40vh;
+        margin-left: 344px;
     }
     #post{
-        margin-left: 10vh;
+        margin-left: 83px;
     }
 }
 @media(max-width: 992px){
     #chat {
-        margin-left: 32vh;
         display: none;
-    }
-    .c1 {
-        margin-left: -31vh;
     }
     .navbar{
         display: none;
@@ -228,13 +268,9 @@ nav{
         display: inline;
     }
 }
-@media(max-width: 665px){
+@media(max-width: 715px){
     .statusbt{
         display: none;
-    }
-    #upload{
-        width: 35vh;
-        margin-top: -4vh;
     }
     #viewcomments{
         display: none;
@@ -243,31 +279,36 @@ nav{
         display: none;
     }
     .card{
-        width: 66vh;
+        width: 494px;
     }
     #postdp{
         display: none;
     }
-}
-@media(max-width: 550px){
-    #upload2{
-        width: 50%;
+    #postimg{
+        margin-left: 60px;
     }
 }
-@media(max-width: 510px){
+@media(max-width: 550px){
     hr{
         display: none;
     }
     .statusbtn{
-        padding-top: 2vh;
-        padding-bottom: 0vh;
-        padding-left: 4vh;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        padding-left: 20px;
     }
     #likebtn, #commentbtn, #sharebtn{
-        margin-left: 0vh;
+        margin-left: 0px;
     }
-    .card{
-        width: 50vh;
+    .card {
+        width: 373px;
+    }
+    #postimg{
+        margin-left: 1vh;
+        margin-bottom: 0.5vh;
+    }
+    #upload2{
+        width: 50%;
     }
 }
 @media(max-width: 390px){
@@ -302,6 +343,11 @@ nav{
     #fbsearch2{
         width: 20vh;
     }
+    #postimg{
+        height: 200px;
+        width: 200px;
+        margin-left: 7vh;
+    }
 }
 @media(max-width: 320px){
     .card {
@@ -310,83 +356,6 @@ nav{
     }
     #upload{
         width: 28vh;
-    }
-}
-@media(max-height: 540px){
-    .card{
-        width: 110vh;
-    }
-    #morepost{
-        margin-left: 83vh;
-    }
-    #viewcomments{
-        margin-left: 75vh;
-    }
-    #chat{
-        margin-left: 100vh;
-    }
-}
-@media(max-height: 500px){
-    .statusbtn{
-        padding: 0vh;
-        padding-left: 8vh;
-    }
-    #viewcomments{
-        margin-left: 65vh;
-    }
-    #morepost{
-        margin-left: 73vh;
-    }
-    .card-subtitle{
-        margin-left: 8vh;
-    }
-    .card{
-        margin-top: 2vh;
-    }
-}
-@media(max-height: 450px){
-    .statusbtn{
-        margin-left: -8vh;
-    }
-    #likebtn,#commentbtn,#sharebtn{
-        margin-left: -5vh;
-    }
-    .card{
-        width: 100vh;
-        margin-left: 30vh;
-    }
-    #viewcomments,#morepost{
-        display: none;
-    }
-    .card-subtitle{
-        margin-left: 9.5vh;
-        margin-top: -3vh;
-    }
-}
-@media(max-height: 405px){
-    .card{
-        margin-left: 45vh;
-        width: 130vh;
-    }
-    #chat{
-        margin-left: 150vh;
-    }
-    #user{
-        margin-left: 70vh;
-    }
-}
-@media(max-height: 311px){
-    .card{
-        width: 170vh;
-    }
-    #chat{
-        margin-left: 200vh;
-    }
-    #user{
-        margin-left: 95vh;
-    }
-    .card-subtitle{
-        margin-left: 13.5vh;
     }
 }
 @media(height: 1024px),(width: 768px){
@@ -412,6 +381,10 @@ nav{
     }
     #likebtn,#commentbtn,#sharebtn{
         padding-left: 1vh;
+    }
+    #postimg{
+        margin-left: 8vh;
+        margin-bottom: 0.5vh;
     }
 }
 @media(height: 1366px),(width: 1024px){
@@ -446,6 +419,9 @@ nav{
     }
     .r{
         display: none;
+    }
+    #postimg{
+        margin-bottom: 0.5vh;
     }
 }
 @media(height: 360px),(width: 640px){
@@ -501,6 +477,10 @@ nav{
         margin-left: 3.5vh;
         margin-top: -2vh;
     }
+    #postimg{
+        margin-left: 10vh;
+        margin-bottom: 0.5vh;
+    }
 }
 @media(height: 960px),(width: 600px){
     .card{
@@ -513,6 +493,10 @@ nav{
     #likebtn,#commentbtn,#sharebtn{
         padding-left: 1vh;
     }
+    #postimg{
+        margin-left: 7vh;
+        margin-bottom: 0.5vh;
+    }
 }
 @media(height: 533px),(width: 320px){
     .card{
@@ -520,6 +504,9 @@ nav{
     }
     #upload{
         width:55vh;
+    }
+    #postimg{
+        margin-left: 4vh;
     }
 }
 @media(height: 731px),(width: 411px){
